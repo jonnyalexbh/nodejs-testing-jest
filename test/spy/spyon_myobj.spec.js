@@ -7,5 +7,3 @@ describe('spyon', () => {
     expect(somethingSpy).toHaveBeenCalled();
   });
 });
-
-
