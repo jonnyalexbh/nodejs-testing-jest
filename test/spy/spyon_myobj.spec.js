@@ -1,4 +1,4 @@
-const { myObj } = require('../spyon');
+const { myObj } = require('../../spyon');
 
 describe('spyon', () => {
   it('spyOn .toHaveBeenCalled()', () => {
