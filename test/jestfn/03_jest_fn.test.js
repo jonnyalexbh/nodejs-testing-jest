@@ -1,27 +1,18 @@
-describe('Jest.fn()', () => {
-  it('returns undefined by default', () => {
-    const mock = jest.fn();
-    const result = mock('foo');
-    expect(result).toBeUndefined();
-    expect(mock).toHaveBeenCalled();
-    expect(mock).toHaveBeenCalledTimes(1);
-    expect(mock).toHaveBeenCalledWith('foo');
-  });
-
+describe('Jest.fn() 03', () => {
   it('mock implementation', () => {
     const mock = jest.fn(() => 'bar');
     expect(mock('foo')).toBe('bar');
     expect(mock).toHaveBeenCalledWith('foo');
   });
 
-  test('also mock implementation', () => {
+  it('also mock implementation', () => {
     const mock = jest.fn().mockImplementation(() => 'bar');
 
     expect(mock('foo')).toBe('bar');
     expect(mock).toHaveBeenCalledWith('foo');
   });
 
-  test('mock implementation one time', () => {
+  it('mock implementation one time', () => {
     const mock = jest.fn().mockImplementationOnce(() => 'bar');
 
     expect(mock('foo')).toBe('bar');
@@ -31,7 +22,7 @@ describe('Jest.fn()', () => {
     expect(mock).toHaveBeenCalledWith('baz');
   });
 
-  test('mock return value', () => {
+  it('mock return value', () => {
     const mock = jest.fn();
     mock.mockReturnValue('bar');
 
@@ -39,7 +30,7 @@ describe('Jest.fn()', () => {
     expect(mock).toHaveBeenCalledWith('foo');
   });
 
-  test('mock promise resolution', () => {
+  it('mock promise resolution', () => {
     const mock = jest.fn();
     mock.mockResolvedValue('bar');
 

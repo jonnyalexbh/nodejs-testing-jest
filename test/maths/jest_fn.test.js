@@ -1,5 +1,5 @@
-const main = require('../../maths/main');
-const math = require('../../maths/maths');
+const main = require('../../src/maths/main');
+const math = require('../../src/maths/maths');
 
 math.add = jest.fn();
 math.subtract = jest.fn();

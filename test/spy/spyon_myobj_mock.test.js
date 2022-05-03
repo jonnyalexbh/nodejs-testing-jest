@@ -1,4 +1,4 @@
-const { myObj } = require('../../spyon');
+const { myObj } = require('../../src/spyon');
 
 describe('spyon', () => {
   it('spyOn().mockReturnValue()', () => {

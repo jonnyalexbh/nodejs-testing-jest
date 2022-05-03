@@ -1,8 +1,8 @@
-const app = require('../../maths/main');
-const math = require('../../maths/maths');
+const app = require('../../src/maths/main');
+const math = require('../../src/maths/maths');
 
 // Set all module functions to jest.fn
-jest.mock('../../maths/maths');
+jest.mock('../../src/maths/maths');
 
 describe('maths with jest.mock', () => {
   it('calls math.add', () => {
