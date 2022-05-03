@@ -1,6 +1,6 @@
 # NodeJs Testing Jest
 
-## Unit testing
+### Unit testing
 
 ``` bash
 $ npm run test
@@ -17,6 +17,14 @@ $ npm run test
 ```sh
 $ npm install --save-dev eslint
 $ npx eslint --init
+```
+
+### Using .nvmrc
+
+```sh
+$ touch .nvmrc
+$ node -v > .nvmrc
+$ nvm use
 ```
 
 ### License
